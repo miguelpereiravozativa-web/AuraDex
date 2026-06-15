@@ -395,13 +395,6 @@ elif st.session_state.etapa == 'resultado_free':
     </div>
     """, unsafe_allow_html=True)
     
-    # Botão simulador de dev para prosseguir
-    st.warning("⚠️ *Para fins de teste do sistema:*")
-    if st.button("SIMULAR PAGAMENTO CONCLUÍDO", use_container_width=True):
-        st.session_state.premium_unlocked = True
-        mudar_etapa('relatorio_premium')
-        st.rerun()
-
 # ==========================================
 # RELATÓRIO PREMIUM
 # ==========================================
